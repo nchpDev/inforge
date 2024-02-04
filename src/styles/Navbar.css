@@ -1,6 +1,8 @@
 /* Navbar.css */
 .navbar {
     width: 100vw;
+    color: #256db3;
+    box-shadow: 0px 0.35rem 1.25rem 0px rgba(0,0,0,0.8);
 }
 
 .navbar-container {
@@ -10,11 +12,11 @@
     align-items: center;
     max-width: 100vw;
     margin: 0 auto;
-    padding: 2.5rem;
+    padding: 2rem;
 }
 
 .logo-container {
-    margin-left: 10rem;
+    margin-left: 7rem;
 }
 
 .nav-links {
@@ -23,10 +25,19 @@
     border: 1px solid red;
     margin-left: auto;
 }
-  
-.nav-links a {
-    color: black;
-    text-decoration: none;
+
+.nav-links Link, a {
+    text-decoration: none!important;
     margin: 0 2rem;
-    font-size: 1.2rem;
+    font-size: 1.35rem;
+    transition: color 0.4s;
+    color: #256db3;
+}
+
+.nav-links a:hover {
+    color: #4892dd;
+}
+
+@media only screen and (max-width: 1000px) {
+    
 }

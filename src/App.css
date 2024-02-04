@@ -6,7 +6,7 @@ html, body, h1, h2, p {
 
 /* Apply some basic styles to the body */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: ubuntu, 'Arial', sans-serif;
   background-color: #fff;
   color: #333;
 }

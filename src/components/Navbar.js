@@ -1,9 +1,10 @@
 // Navbar.js
 import React from 'react';
-import { Link } from 'react-scroll';
+import '../styles/Navbar.css';
+import { Link as ScrollLink } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import '../styles/Navbar.css';
 import inforge_logo from '../assets/inforge_logo.webp';
 
 const Navbar = () => {
@@ -17,15 +18,17 @@ const Navbar = () => {
         </div>
         <div className="nav-links">
 
-          <Link to="contact-us">Contact Us</Link>
+          <ScrollLink to="about-us" smooth={true} duration={500}>About Us</ScrollLink>
 
-          <Link to="blog">Blog</Link>
+          <RouterLink to="/subscribe">Contact Us</RouterLink>
 
-          <Link to="customer-login">Customer Login</Link>
+          <RouterLink to="/blog">Blog</RouterLink>
 
-          <Link to="free-consultation">Free Consultation</Link>
+          <a href="https://www.external-consultation-page.com" target="_blank" rel="noopener noreferrer">
+            Free Consultation
+          </a>
 
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/company/inforge-us/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
 
