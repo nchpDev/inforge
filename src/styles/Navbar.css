@@ -28,6 +28,7 @@
 
 .nav-links Link, a {
     text-decoration: none!important;
+    text-align: center;
     margin: 0 2rem;
     font-size: 1.35rem;
     transition: color 0.4s;
@@ -39,5 +40,5 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    
+
 }
