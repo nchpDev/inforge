@@ -6,13 +6,13 @@ import Blog from './pages/Blog';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route exact path="/inforge" component={Home} />
-        <Route path="/inforge/subscribe" component={Subscribe} />
-        <Route path="/inforge/blog" component={Blog} />
-      </Routes>
-    </Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/subscribe" element={<Subscribe />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+      </Router>
   );
 }
 
