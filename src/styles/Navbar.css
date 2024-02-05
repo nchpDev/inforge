@@ -2,7 +2,7 @@
 .navbar {
     width: 100vw;
     color: #256db3;
-    box-shadow: 0px 0.35rem 1.25rem 0px rgba(0,0,0,0.8);
+    box-shadow: 0rem 0rem 0.75rem 0rem rgba(0,0,0,0.8);
 }
 
 .navbar-container {
@@ -26,19 +26,63 @@
     margin-left: auto;
 }
 
-.nav-links Link, a {
+.nav-links a,
+.nav-links Link {
     text-decoration: none!important;
     text-align: center;
     margin: 0 2rem;
-    font-size: 1.35rem;
+    font-size: 1.15rem;
     transition: color 0.4s;
     color: #256db3;
+    font-weight: 800;
+    align-self: center; 
 }
 
 .nav-links a:hover {
     color: #4892dd;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1400px) {
+    .logo-container {
+        margin-left: 4.5rem;
+    }
 
+    .nav-links a,
+    .nav-links Link {
+        font-size: 1.05rem;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .logo-container {
+        margin-left: 3rem;
+    }
+
+    .nav-links a,
+    .nav-links Link {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 1210px) {
+    .logo-container {
+        margin-left: 1.5rem;
+    }
+
+    .nav-links a,
+    .nav-links Link {
+        font-size: 0.8rem;
+        margin: 0 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 1142px) {
+    .logo-container {
+        margin-left: 1rem;
+    }
+
+    .nav-links a,
+    .nav-links Link {
+        margin: 0 1rem;
+    }
 }
